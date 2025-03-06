@@ -1,0 +1,5 @@
+aiogram==3.3.0
+python-dotenv==1.0.1
+anthropic==0.18.1
+asyncio==3.4.3
+dotenv==0.9.9
