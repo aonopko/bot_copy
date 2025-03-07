@@ -9,10 +9,16 @@ def get_language_keyboard() -> InlineKeyboardMarkup:
         ]
     ])
 
+def get_post_type_keyboard() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(inline_keyboard=[
+        [InlineKeyboardButton(text="1500 символов", callback_data="type_1500")],
+        [InlineKeyboardButton(text="1024 символа", callback_data="type_1024")]
+    ])
+
 def get_post_keyboard() -> InlineKeyboardMarkup:
     return InlineKeyboardMarkup(inline_keyboard=[
-        [InlineKeyboardButton(text="Опубликовать с фото", callback_data="publish_with_photo")],
-        [InlineKeyboardButton(text="Опубликовать без фото", callback_data="publish_without_photo")],
+        [InlineKeyboardButton(text="Добавить фото", callback_data="add_photo")],
+        [InlineKeyboardButton(text="Опубликовать", callback_data="publish")],
         [InlineKeyboardButton(text="Удалить", callback_data="delete")]
     ])
 
